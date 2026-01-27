@@ -11,6 +11,6 @@ if numi > deno and numi % deno > 0:
     w_num = numi // deno
     up = numi % deno
     if mixed_frac:
-        result = fr"\large{{{{w_num}}}}\frac{{{up}}}{{{deno}}}"
+        result = fr"{{\large{{{w_num}}}}}\frac{{{up}}}{{{deno}}}"
 
 st.latex(result)
