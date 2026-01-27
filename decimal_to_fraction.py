@@ -7,7 +7,7 @@ numi = frac.Fraction(deci).limit_denominator().numerator
 deno = frac.Fraction(deci).limit_denominator().denominator
 result = fr"\frac{{{numi}}}{{{deno}}}"
 if numi > deno and numi % deno > 0:
-    mixed_frac = st.toggle("Expressed as mixed fraction")
+    mixed_frac = st.toggle("Expressed as a mixed fraction")
     w_num = numi // deno
     up = numi % deno
     if mixed_frac:
