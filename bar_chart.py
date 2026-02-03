@@ -50,7 +50,7 @@ if not data.empty and  not data[var].duplicated().any():
       
       f, a = plt.subplots(figsize=(8,5)) 
       a.margins(.2)
-      data[var] = [tw.fill(x,10,) for x in data[var]]
+      data[var] = [tw.fill(x,20,) for x in data[var]]
       tot = data["Frequency"].sum()
       lab_typ = "n%"
       y_axis = "n"
