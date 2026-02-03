@@ -124,7 +124,7 @@ if not data.empty and  not data[var].duplicated().any():
    with tab4:
       st.subheader("Edit your graph")
       with st.expander("Chart Settings",
-                       expanded=True):
+                       expanded=False):
          st.write("Graph size (in inches)")
          col1, col2 = st.columns(2)
          with col1:
