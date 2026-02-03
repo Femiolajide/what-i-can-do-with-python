@@ -259,7 +259,7 @@ if not data.empty and  not data[var].duplicated().any():
       ax = plt.gca()
       ax.set_axisbelow(True)
       f_wegt_t = "bold" if title_bold else None
-      plt.title(f"\nFrequency Distribution of {var.capitalize()}",
+      plt.title(f"\n{title}",
                 fontsize=title_size,
                fontweight=f_wegt_t,pad=20,
                color=title_color)
