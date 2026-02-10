@@ -54,6 +54,7 @@ with tab1:
                                 columns)
             data = data[var].value_counts(sort=False).to_frame().reset_index()
             data = data.rename(columns={"count":"Frequency"})
+            data = data.astype({var:str})
             if not data.empty:
                 with tab3:
                     f, a = plt.subplots(figsize=(8,5)) 
