@@ -2,3 +2,6 @@ streamlit
 matplotlib
 seaborn
 pandas
+charset-normalizer
+xlrd
+openpyxl
