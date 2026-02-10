@@ -196,10 +196,10 @@ with tab1:
                             rows = [cat[i:i+max_cols] for i in range(0,len(cat),max_cols)] 
                             for x in rows:
                                 cols = st.columns(len(x))
-                            for col, kat in zip(cols,x):
-                                with col:
-                                    clrs[kat] = st.color_picker(f"{kat}",
-                                                        "#2956a3")
+                                for col, kat in zip(cols,x):
+                                    with col:
+                                        clrs[kat] = st.color_picker(f"{kat}",
+                                                            "#2956a3")
                     if bar_sort == "ascending":
                         data = data.sort_values("Frequency",ascending=True)
                     elif bar_sort == "descending":
@@ -293,7 +293,7 @@ with tab1:
                                         file_name="bar_chart_"+ts+".png",
                                         mime="Image/png")
 
-
+st.write(cat)
                             
 
 
