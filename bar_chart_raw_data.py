@@ -293,8 +293,7 @@ with tab1:
                                         file_name="bar_chart_"+ts+".png",
                                         mime="Image/png")
 
-st.write(cat)
-                            
+
 
 
 
