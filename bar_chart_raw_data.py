@@ -29,9 +29,9 @@ with tab1:
     if file:
         if re.search(r"\.tsv$|\.csv$|\.txt$|\.xlsx$|\.xls$",file.name):
             if re.search(r"\.tsv$|\.csv$|\.txt$",file.name):
-                raw = str(file.getvalue())
+                raw = file.getvalue()
                 encod = from_bytes(raw).best().encoding
-                sample_txt = raw[:2048].decode(encoding=encod,errors="ignore")
+                sample_txt = raw.decode(encoding=encod,errors="ignore")
                 delimiter = csv.Sniffer().sniff(sample_txt).delimiter
                 data = pd.read_csv(file,encoding=encod,sep=delimiter)
             else:
