@@ -29,7 +29,7 @@ with tab1:
     if file:
         if re.search(r"\.tsv$|\.csv$|\.txt$|\.xlsx$|\.xls$",file.name):
             if re.search(r"\.tsv$|\.csv$|\.txt$",file.name):
-                raw = file.getvalue()
+                raw = str(file.getvalue())
                 encod = from_bytes(raw).best().encoding
                 sample_txt = raw[:2048].decode(encoding=encod,errors="ignore")
                 delimiter = csv.Sniffer().sniff(sample_txt).delimiter
