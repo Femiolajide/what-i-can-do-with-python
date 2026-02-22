@@ -7,7 +7,7 @@ st.title("Word Builder: Generate English Words from Custom Letters")
 st.write("""Enter a group of letters and choose the desired word length.
 The app will generate all valid English words that can be formed from those letters.
 
----E
+---
          """)
 
 txt_entered = st.text_input(
