@@ -1,8 +1,15 @@
 import streamlit as st
 import re
 from fractions import Fraction as fra
-st.title("Fraction Calculator")
-st.write("This app allows you to do arithmethic in fraction")
+st.title("Fraction Expression Calculator")
+st.write(
+    """This calculator evaluates mathematical expressions containing fractions only.
+It accepts valid fraction expressions `(e.g., 3/4 + 5/6)` and returns the answer.
+Note that :red[exponents] and :red[mixed fractions] are not currently supported."""
+)
+st.write("---")
+st.write(":blue-background[**NOTE:**] Correct answer is guarantted but the proper \
+representation of complex expressions is still work-in-progress!")
 def parse_frac_num(x:str):
     x = x.strip()
     import re 
@@ -20,8 +27,8 @@ def parse_frac_num(x:str):
         x = x.replace("^(","^{(").replace(")",")}").replace("{6","{{6").replace("6}","6}}")
     return x
     
-exp = st.text_input("Enter your expression",
-                    placeholder="Type your fraction: e.g 2/4 + 5/6")
+exp = st.text_input("Enter Fraction Expression",
+                    placeholder="e.g. 3/4 + 5/6 - 1/2")
 if exp:
     exp2 = exp.replace("^","**")
     if re.search(r"[^0-9\-\+\/\* \^\.\(\)]",exp):
@@ -48,24 +55,27 @@ if exp:
             if den == num:
                 fn_ans = f"{frac_exp} = {1}"
                 st.latex(fn_ans)
-            elif den < num and den != 1:
-                as_mixed = st.toggle("Express answer as mixed fraction")
-                if as_mixed:
-                    w_num = num // den
-                    remain = num % den
-                    if remain != 0:
-                        fn_ans = fr"{frac_exp} = {{\large{w_num}}} \frac{{{remain}}}{{{den}}}"
-                        st.latex(fn_ans)
+            elif den < num:
+                if den != 1:
+                    as_mixed = st.toggle("Express answer as mixed fraction")
+                    if as_mixed:
+                        w_num = num // den
+                        remain = num % den
+                        if remain != 0:
+                            fn_ans = fr"{frac_exp} = {{\large{w_num}}} \frac{{{remain}}}{{{den}}}"
+                            st.latex(fn_ans)
+                        else:
+                            fn_ans = fr"{frac_exp} = {num//den}"
+                            st.latex(fn_ans)
+                    elif den == 1:
+                        fn_ans = fr"{frac_exp} = {num}"
+                        st.latex(fn_ans)   
                     else:
-                        fn_ans = fr"{frac_exp} = {num//den}"
+                        fn_ans = fr"{frac_exp} = \frac{{{num}}}{{{den}}}"
                         st.latex(fn_ans)
-                elif den == 1:
-                    fn_ans = fr"{frac_exp} = {num}"
-                    st.latex(fn_ans)   
                 else:
-                    fn_ans = fr"{frac_exp} = \frac{{{num}}}{{{den}}}"
+                    fn_ans = f"{frac_exp} = {num}"
                     st.latex(fn_ans)
             else:
                 fn_ans = fr"{frac_exp} = \frac{{{num}}}{{{den}}}"
                 st.latex(fn_ans)
-
