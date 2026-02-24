@@ -48,7 +48,7 @@ if exp:
             if den == num:
                 fn_ans = f"{frac_exp} = {1}"
                 st.latex(fn_ans)
-            elif den < num and den:
+            elif den < num and den != 1:
                 as_mixed = st.toggle("Express answer as mixed fraction")
                 if as_mixed:
                     w_num = num // den
