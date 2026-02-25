@@ -9,7 +9,7 @@ Note that :red[exponents] and :red[mixed fractions] are not currently supported.
 )
 st.write("---")
 st.write(":blue-background[**NOTE:**] Correct answer is guarantted, but proper \
-representation of complex expressions s still work-in-progress!")
+representation of complex expressions is still work-in-progress!")
 def parse_frac_num(x:str):
     x = x.strip()
     import re 
