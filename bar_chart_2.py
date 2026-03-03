@@ -89,9 +89,9 @@ if not data.empty and  not data[var].duplicated().any():
             pass
       plt.xticks(fontsize=10)
       plt.yticks(fontsize=10)
-      plt.ylabel("\nFrequency\n",fontsize=14,)
-      plt.xlabel("\n"+var+"\n",fontsize=14,)
-      plt.grid(which="both",axis="y",alpha=.3)
+      plt.xlabel("\nFrequency\n",fontsize=14,)
+      plt.ylabel("\n"+var+"\n",fontsize=14,)
+      plt.grid(which="both",axis="x",alpha=.3)
       ax = plt.gca()
       ax.set_axisbelow(True)
       plt.title(f"\nFrequency Distribution of {var.capitalize()}",
@@ -105,7 +105,7 @@ if not data.empty and  not data[var].duplicated().any():
                   )
       y_tik = ax.get_yticks()
       if y_axis == "%":
-         plt.yticks(y_tik, [f"{x/tot:.0%}" for x in y_tik])
+         plt.xticks(y_tik, [f"{x/tot:.0%}" for x in y_tik])
       plt.tight_layout()
       if not data.empty:
          st.pyplot(f)
@@ -201,8 +201,8 @@ if not data.empty and  not data[var].duplicated().any():
       lab_typ = data_label
       y_axis = y_ax_as_pct
       sns.barplot(data=data,
-                  x=var,
-                  y="Frequency",
+                  y=var,
+                  x="Frequency",
                   width=bar_width,
                   # height= 5,
                   # aspect=1.8,
@@ -217,7 +217,7 @@ if not data.empty and  not data[var].duplicated().any():
       ax = plt.gca()
       for cont in ax.containers:
          if lab_typ == "n (%)":
-            lab = [f"{int(x.get_height())}\n({int(x.get_height())/tot:.1%})" 
+            lab = [f"{int(x.get_width())}\n({int(x.get_width())/tot:.1%})" 
                   
                   for x in cont]
             ax.bar_label(container=cont,labels=lab,padding=4,
@@ -225,7 +225,7 @@ if not data.empty and  not data[var].duplicated().any():
                          color=data_label_color
                         )
          elif lab_typ == "%":
-            lab = [f"{int(x.get_height())/tot:.1%}" 
+            lab = [f"{int(x.get_width())/tot:.1%}" 
                   
                   for x in cont]
             ax.bar_label(container=cont,labels=lab,padding=4,
@@ -233,7 +233,7 @@ if not data.empty and  not data[var].duplicated().any():
                          color=data_label_color
                         )
          elif lab_typ == "n":
-            lab = [f"{int(x.get_height())}" 
+            lab = [f"{int(x.get_width())}" 
                   
                   for x in cont]
             ax.bar_label(container=cont,labels=lab,padding=4,
@@ -252,7 +252,7 @@ if not data.empty and  not data[var].duplicated().any():
                  color=x_lab_colour,
                  fontsize=x_lab_size,
                  fontweight="bold" if x_lab_bold else None,)
-      plt.grid(which="both",axis="y",alpha=.3)
+      plt.grid(which="both",axis="x",alpha=.3)
       ax = plt.gca()
       ax.set_axisbelow(True)
       f_wegt_t = "bold" if title_bold else None
@@ -268,7 +268,7 @@ if not data.empty and  not data[var].duplicated().any():
                   )
       y_tik = ax.get_yticks()
       if y_ax_as_pct:
-         plt.yticks(y_tik, [f"{x/tot:.0%}" for x in y_tik])
+         plt.xticks(y_tik, [f"{x/tot:.0%}" for x in y_tik])
       plt.tight_layout()
       if not data.empty:
          st.pyplot(f)
