@@ -47,7 +47,12 @@ represents the category being analysed (E.g. Gender, Departments...)")
 if data[var].duplicated().any():
    st.error("❌❌❌\nThere is a duplicate in your **category.**  Check your data entry again!")
 if not data.empty and  not data[var].duplicated().any():
-   
+   st.radio("Select chart orientation",
+            options=["Column Chart",
+                     "Bar Chart"],
+            captions=["Vertical bars",
+                      "Horizontal bars"]
+            )
    with tab3:
       f, a = plt.subplots(figsize=(8,5)) 
       a.margins(.2)
