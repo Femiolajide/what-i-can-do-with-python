@@ -196,7 +196,7 @@ if not data.empty and  not data[var].duplicated().any():
          pass
       f, a = plt.subplots(figsize=(width,height)) 
       a.margins(.2)
-      data[var] = [tw.fill(x,12,) for x in data[var]]
+      data[var] = [tw.fill(x,100,) for x in data[var]]
       tot = data["Frequency"].sum()
       lab_typ = data_label
       y_axis = y_ax_as_pct
