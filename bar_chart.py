@@ -62,9 +62,7 @@ if not data.empty and  not data[var].duplicated().any():
                   # aspect=1.8,
                   palette="colorblind",
                   ax=a
-                  
                   )
-
       ax = plt.gca()
       for cont in ax.containers:
          if lab_typ == "n%":
@@ -83,7 +81,6 @@ if not data.empty and  not data[var].duplicated().any():
                         )
          elif lab_typ == "n":
             lab = [f"{int(x.get_height())}" 
-                  
                   for x in cont]
             ax.bar_label(container=cont,labels=lab,padding=4,
                         #  fontsize=12
