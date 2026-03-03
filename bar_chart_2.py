@@ -137,7 +137,7 @@ if not data.empty and  not data[var].duplicated().any():
          with col3:
             title_bold = st.checkbox("Bold",True)
       with st.expander("Axis settings"):
-         x_lab = st.text_input("X-axis Label",var)
+         x_lab = st.text_input("X-axis Label","Frequency")
          col1, col2, col3, col4, col5 = st.columns(5)
          with col1:
             x_lab_size = st.slider("X label Font size",8,40,11)
@@ -149,7 +149,7 @@ if not data.empty and  not data[var].duplicated().any():
             x_lab_dat_size = st.slider("x data Font size",8,40,11)
          with col5:
             x_lab_data_colour = st.color_picker("x data Colour","#000000")
-         y_lab = st.text_input("Y-axis Label","Frequency")
+         y_lab = st.text_input("Y-axis Label",var)
          col1, col2, col3, col4, col5, col6 = st.columns(6)
          with col1:
             y_lab_size = st.slider("Y label Font size",8,40,11)
