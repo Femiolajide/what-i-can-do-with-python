@@ -266,7 +266,7 @@ if not data.empty and  not data[var].duplicated().any():
          # left=True
                   # offset=24
                   )
-      y_tik = ax.get_yticks()
+      y_tik = ax.get_xticks()
       if y_ax_as_pct:
          plt.xticks(y_tik, [f"{x/tot:.0%}" for x in y_tik])
       plt.tight_layout()
