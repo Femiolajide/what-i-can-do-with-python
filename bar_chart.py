@@ -67,7 +67,6 @@ if not data.empty and  not data[var].duplicated().any():
       for cont in ax.containers:
          if lab_typ == "n%":
             lab = [f"{int(x.get_height())}\n({int(x.get_height())/tot:.1%})" 
-                  
                   for x in cont]
             ax.bar_label(container=cont,labels=lab,padding=4,
                         #  fontsize=12
