@@ -50,8 +50,8 @@ if not data.empty and  not data[var].duplicated().any():
    st.radio("Select chart orientation",
             options=["Column Chart",
                      "Bar Chart"],
-            captions=["Vertical bars",
-                      "Horizontal bars"]
+            captions=["Vertical bars (Best for small categories)",
+                      "Horizontal bars (Great for many categories)"]
             )
    with tab3:
       f, a = plt.subplots(figsize=(8,5)) 
