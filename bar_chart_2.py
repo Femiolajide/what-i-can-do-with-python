@@ -339,7 +339,6 @@ if not data.empty and  not data[var].duplicated().any():
          sns.despine(ax=a,
             top=True,
             right=True,
-     
                      )
          y_tik = ax.get_yticks()
          if y_axis == "%":
