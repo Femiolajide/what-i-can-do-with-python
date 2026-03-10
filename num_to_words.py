@@ -1,10 +1,11 @@
 import streamlit as st
 from variety import num_to_words
+st.title("NUMBER TO WORDS")
 st.write("""
-### **num_to_words**
+---
 
          
-Hi, I have packaged the :orange[num_to_words] function in a more user-friendly interface for you to try out.  
+This web app allows you to convert number to words.  
 Read more about it [here](https://github.com/Femiolajide/Python-Functions-Playground#1-num_to_words)    
          
 
