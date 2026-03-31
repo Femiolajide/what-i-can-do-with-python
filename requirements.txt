@@ -6,3 +6,4 @@ charset-normalizer
 xlrd
 openpyxl
 pyperclip
+pillow

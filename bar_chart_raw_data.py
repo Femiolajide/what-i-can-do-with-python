@@ -31,7 +31,7 @@ with tab1:
             if re.search(r"\.tsv$|\.csv$|\.txt$",file.name):
                 raw = file.getvalue()
                 encod = from_bytes(raw).best().encoding
-                sample_txt = raw.decode(encoding=encod,errors="ignore")
+                sample_txt = raw .decode(encoding=encod,errors="ignore")
                 delimiter = csv.Sniffer().sniff(sample_txt).delimiter
                 data = pd.read_csv(file,encoding=encod,sep=delimiter)
             else:
