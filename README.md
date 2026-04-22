@@ -63,6 +63,24 @@ All are built with intention.
 Each episode represents a small idea turned into a working solution.
 
 ---
+### 🔹 Episode 13 – Natural Sorting in Excel (Python UDF)
+Extend Excel sorting with a Python UDF that handles natural sorting across mixed values and supports multiple columns with custom sort directions.
+🎥 [Demo](https://drive.google.com/file/d/1E2FoFAcJ9FakmbRhF-sP9WHQJ0Dj9e5G/view?usp=drivesdk)
+📝 [Read LinkedIn Post](https://www.linkedin.com/posts/olajide-atanda-084756239_episode-13-of-what-i-can-do-with-python-activity-7452465417710825472-DWWm?utm_source=share&utm_medium=member_android&rcm=ACoAADtgoeQB7Oys-vyU028wK5ForxCRgjuNZmw)
+
+---
+### 🔹 Episode 12 – Split Multiple Responses in Excel (Python UDF)
+Expand cells containing multiple values into separate rows directly in Excel using Python.
+🎥 [Demo](https://drive.google.com/file/d/141djvN9j3e6NRDiwX0vIp_1VmEjlZY3N/view?usp=drivesdk)
+📝 [Read LinkedIn Post](https://www.linkedin.com/posts/olajide-atanda-084756239_episode-12-of-what-i-can-do-with-python-activity-7449909873783238656-H7IS?utm_source=share&utm_medium=member_android&rcm=ACoAADtgoeQB7Oys-vyU028wK5ForxCRgjuNZmw)
+
+---
+### 🔹 Episode 11 – AGE Function for Excel (Python UDF)
+Calculate the difference between two dates in a human-readable format like years, months, and days, similar to PostgreSQL’s AGE() function.
+🎥 [Demo](https://drive.google.com/file/d/1fZqLdT3SXd1E-GWLfGSljTLmz5eyYifY/view?usp=drivesdk)
+📝 [Read LinkedIn Post](https://www.linkedin.com/posts/olajide-atanda-084756239_episode-11-what-i-can-do-with-python-welcome-activity-7447376664361201664-kc7B?utm_source=share&utm_medium=member_android&rcm=ACoAADtgoeQB7Oys-vyU028wK5ForxCRgjuNZmw)
+
+---
 ### 🔹 Episode 10 – Automated Certificate Generator  
 Automate certificate creation from single inputs or bulk datasets, with downloadable outputs in one click.  
 - 🔗 [Try the Live App](https://bulk-certificate.streamlit.app)
