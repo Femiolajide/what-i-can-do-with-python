@@ -6,11 +6,9 @@ st.title("Fraction Expression Calculator")
 st.write(
     """This calculator evaluates mathematical expressions containing fractions only.
 It accepts valid fraction expressions `(e.g., 3/4 + 5/6)` and returns the answer. 
-Note that :red[exponents] and :red[mixed fractions] are not currently supported."""
+Note that:red[mixed fractions] is not currently supported."""
 )
 st.write("---")
-st.write(":blue-background[**NOTE:**] Correct answer is guarantted, but proper \
-representation of complex expressions is still work-in-progress!")
 def parse_frac_num(x:str):
     x = x.strip()
     import re 
