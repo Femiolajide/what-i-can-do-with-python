@@ -35,6 +35,8 @@ def psql_script(df,table_name:str) -> str:
                         temp_txt = temp_txt + f"'{q}', "
                     elif p != len(x) and q == 'NULL':
                         temp_txt = temp_txt + f"{q}, "
+                    elif p == len(x) and q == 'NULL':
+                        temp_txt = temp_txt + f"{q}, "
                     else:
                         temp_txt = temp_txt + f"'{q}'),\n"
                 temp_txt_list.append(temp_txt)
@@ -43,6 +45,8 @@ def psql_script(df,table_name:str) -> str:
                     if p != len(x) and q != 'NULL':
                         temp_txt = temp_txt + f"'{q}',"
                     elif p != len(x) and q == 'NULL':
+                        temp_txt = temp_txt + f"{q},"
+                    elif p == len(x) and q == 'NULL':
                         temp_txt = temp_txt + f"{q},"
                     elif p == len(x):
                         temp_txt = temp_txt + f"'{q}')"
