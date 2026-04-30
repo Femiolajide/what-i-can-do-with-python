@@ -69,8 +69,8 @@ encod = "utf-8"
 data = ""
 
 file = st.file_uploader("**Upload your data**",
-                        help="Only csv, txt, tsv and excel file are supported",
-                        max_upload_size=500)
+                        help="Only csv, txt, tsv and excel file are supported"
+                        )
 
 if file:
     if re.search(r"\.tsv$|\.csv$|\.txt$|\.xlsx$|\.xls$",file.name):
