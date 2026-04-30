@@ -62,6 +62,13 @@ All are built with intention.
 
 Each episode represents a small idea turned into a working solution.
 
+### 🔹 Episode 14 – Fraction Expression Calculator (Upgraded) 
+
+Improved my earlier fraction calculator from Episode 5 by adding support for exponent expressions and cleaner LaTeX-style rendering for complex mathematical expressions.
+
+- 🎥 [Demo](https://fraction-calculator-beta.streamlit.app) 
+- 📝 [Read LinkedIn Post](https://www.linkedin.com/posts/olajide-atanda-084756239_episode-14-of-what-i-can-do-with-python-share-7454987588207157248-ETk5?utm_source=share&utm_medium=member_android&rcm=ACoAADtgoeQB7Oys-vyU028wK5ForxCRgjuNZmw)
+
 ---
 ### 🔹 Episode 13 – Natural Sorting in Excel (Python UDF)
 Extend Excel sorting with a Python UDF that handles natural sorting across mixed values and supports multiple columns with custom sort directions.
