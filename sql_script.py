@@ -14,9 +14,13 @@ def extention(x):
 def psql_script(df,table_name:str) -> str:
     def clean_name(txt:str):
         import re
-        txt = txt.lower()
         txt = re.sub(r"\s{2,}"," ",txt)
-        return re.sub(r"[^a-z0-9_]","_",txt)
+        txt = re.sub(r"[^a-zA-Z0-9_]","_",txt)
+        for x in txt:
+            if str(x).isupper():
+                txt = txt.replace(x,f"_{x}")
+        txt = txt.strip("_").lower()
+        return txt
     table_name = clean_name(table_name)
     def psql_val(df):
         import pandas as pd
