@@ -6,7 +6,9 @@ from charset_normalizer import from_bytes
 import csv
 import datetime as dt
 ts = dt.datetime.now().strftime("%y%m%d%H%M%S")
-
+st.title("CSV/TSV/TXT/Excel to PostgreSQL Table Generator")
+st.write("This tool converts CSV and Excel files into ready-to-use PostgreSQL table creation scripts. It automatically formats column names into snake_case and derives the table name from the uploaded file (also standardised to snake_case")
+st.markdown("---")
 def extention(x):
     import re
     return re.findall(r"\..+$",x)[0]
@@ -27,6 +29,7 @@ def psql_script(df,table_name:str) -> str:
         import polars as pl
         df = df.fillna("NULL")
         df = df.apply(lambda x: x.astype(str))
+        df = df.replace({"":'NULL'})
         df = df.apply(lambda x: x.str.replace("'","''"))
         pl_df = pl.DataFrame(df)
         in_rows = pl_df.rows()
@@ -90,22 +93,23 @@ if file:
             delimiter = csv.Sniffer().sniff(sample_txt).delimiter
             if delimiter.strip() and delimiter != '\t':
                 try:
-                    data = pd.read_csv(file,encoding=encod,sep=delimiter)
+                    data = pd.read_csv(file,encoding=encod,sep=delimiter,na_filter=False)
                 except:
                     st.error("ERROR! Check your file again, does it have proper table structure?")
             else:
                 try:
-                    data = pd.read_csv(file,encoding=encod,sep="\t")
+                    data = pd.read_csv(file,encoding=encod,sep="\t",na_filter=False)
                 except:
                     st.error("ERROR! Check your file again, does it have proper table structure?")
         else:
             sheets = [*pd.read_excel(file,sheet_name=None).keys()]
             if len(sheets) == 1:
-                data = pd.read_excel(file)
+                data = pd.read_excel(file,na_filter=False)
             else:
                 sheet = st.selectbox("### Select the sheet you want to pick data from",
                             sheets)
-                data = pd.read_excel(file, sheet_name=sheet)
+                data = pd.read_excel(file, sheet_name=sheet,
+                                     na_filter=False)
     else:
         st.error(f"ERROR: You can only upload csv, txt, tsv or excel file NOT '{extention(file.name)}' file")
     if not isinstance(data,str):
@@ -118,5 +122,5 @@ if file:
             "Download SQL data script",
             data=data_table.encode("utf-8",errors="replace").decode("utf-8"),
             mime="text/plain",
-            file_name=f"sql_script_{ts}.txt")
+            file_name=f"sql_script_{ts}.sql")
     
