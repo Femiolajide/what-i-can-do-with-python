@@ -6,7 +6,7 @@ from charset_normalizer import from_bytes
 import csv
 import datetime as dt
 ts = dt.datetime.now().strftime("%y%m%d%H%M%S")
-st.title("CSV/TSV/TXT/Excel to PostgreSQL Table Generator")
+st.title("CSV/Excel to PostgreSQL Table Generator")
 st.write("This tool converts CSV and Excel files into ready-to-use PostgreSQL table creation scripts. It automatically formats column names into snake_case and derives the table name from the uploaded file (also standardised to snake_case")
 st.markdown("---")
 def extention(x):
