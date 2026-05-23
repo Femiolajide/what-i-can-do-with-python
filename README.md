@@ -70,13 +70,13 @@ Upgraded the CSV/Excel to SQL tool by adding support for multiple file uploads, 
 - 🔗 [Try the Live App](https://sql-data-loading-script-3.streamlit.app) 
 - 📝 [Read LinkedIn Post](https://www.linkedin.com/posts/olajide-atanda-084756239_episode-17-of-what-i-can-do-with-python-ugcPost-7462621978143895552--B6Z/?utm_source=share&utm_medium=member_android&rcm=ACoAADtgoeQB7Oys-vyU028wK5ForxCRgjuNZmw) 
 
-🔹 Episode 16 – CSV/Excel to MySQL and PostgreSQL Script Generator
+### 🔹 Episode 16 – CSV/Excel to MySQL and PostgreSQL Script Generator
 Extended the earlier PostgreSQL script generator by adding MySQL support, so users can choose their preferred SQL format before downloading the generated script.
 
 - 🔗 [Try the Live App](https://sql-data-loading-script-2.streamlit.app) 
 - 📝 [Read LinkedIn Post](https://www.linkedin.com/posts/olajide-atanda-084756239_episode-16-of-what-i-can-do-with-python-activity-7460053783570735104-FK7A?utm_source=share&utm_medium=member_android&rcm=ACoAADtgoeQB7Oys-vyU028wK5ForxCRgjuNZmw) 
 
-🔹 Episode 15 – CSV/Excel to PostgreSQL Script Generator
+### 🔹 Episode 15 – CSV/Excel to PostgreSQL Script Generator
 Built a simple Streamlit tool that converts CSV or Excel files into ready-to-run PostgreSQL scripts for creating tables and inserting data.
 
 - 🔗 [Try the Live App](https://sql-data-loading-script.streamlit.app) 
