@@ -62,11 +62,34 @@ All are built with intention.
 
 Each episode represents a small idea turned into a working solution.
 
+
+
+### 🔹 Episode 17 – Multi-File CSV/Excel to SQL Script Generator
+Upgraded the CSV/Excel to SQL tool by adding support for multiple file uploads, allowing users to generate table creation and data insertion scripts for several files at once.
+
+- 🔗 [Try the Live App](https://sql-data-loading-script-3.streamlit.app) 
+- 📝 [Read LinkedIn Post](https://www.linkedin.com/posts/olajide-atanda-084756239_episode-17-of-what-i-can-do-with-python-ugcPost-7462621978143895552--B6Z/?utm_source=share&utm_medium=member_android&rcm=ACoAADtgoeQB7Oys-vyU028wK5ForxCRgjuNZmw) 
+
+🔹 Episode 16 – CSV/Excel to MySQL and PostgreSQL Script Generator
+Extended the earlier PostgreSQL script generator by adding MySQL support, so users can choose their preferred SQL format before downloading the generated script.
+
+- 🔗 [Try the Live App](https://sql-data-loading-script-2.streamlit.app) 
+- 📝 [Read LinkedIn Post](https://www.linkedin.com/posts/olajide-atanda-084756239_episode-16-of-what-i-can-do-with-python-activity-7460053783570735104-FK7A?utm_source=share&utm_medium=member_android&rcm=ACoAADtgoeQB7Oys-vyU028wK5ForxCRgjuNZmw) 
+
+🔹 Episode 15 – CSV/Excel to PostgreSQL Script Generator
+Built a simple Streamlit tool that converts CSV or Excel files into ready-to-run PostgreSQL scripts for creating tables and inserting data.
+
+- 🔗 [Try the Live App](https://sql-data-loading-script.streamlit.app) 
+- 📝 [Read LinkedIn Post](https://www.linkedin.com/posts/olajide-atanda-084756239_episode-15-of-what-i-can-do-with-python-activity-7457537718533918720-vmGl?utm_source=share&utm_medium=member_android&rcm=ACoAADtgoeQB7Oys-vyU028wK5ForxCRgjuNZmw)
+
+
+
+
 ### 🔹 Episode 14 – Fraction Expression Calculator (Upgraded) 
 
 Improved my earlier fraction calculator from Episode 5 by adding support for exponent expressions and cleaner LaTeX-style rendering for complex mathematical expressions.
 
-- 🎥 [Demo](https://fraction-calculator-beta.streamlit.app) 
+- 🔗 [Try the Live App](https://fraction-calculator-beta.streamlit.app) 
 - 📝 [Read LinkedIn Post](https://www.linkedin.com/posts/olajide-atanda-084756239_episode-14-of-what-i-can-do-with-python-share-7454987588207157248-ETk5?utm_source=share&utm_medium=member_android&rcm=ACoAADtgoeQB7Oys-vyU028wK5ForxCRgjuNZmw)
 
 ---
