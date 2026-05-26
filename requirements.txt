@@ -9,3 +9,4 @@ pyperclip
 pillow
 lark
 polars
+natsort
