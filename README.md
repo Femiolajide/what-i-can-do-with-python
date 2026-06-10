@@ -64,7 +64,7 @@ All are built with intention.
 Each episode represents a small idea turned into a working solution.
 
 
-### 🔹 Episode 19 – SQL-First Bank Customer Churn Analysis with PostgreSQL and Streamlit
+### 🔹 Episode 19 – Bank Customer Churn Analysis with PostgreSQL and Streamlit
 Started an interactive SQL analysis project that connects Streamlit to a remote PostgreSQL database. Each section displays the SQL query behind the action, allows users to run it, and returns the result with a short insight. This episode covers the data setup stage, including data source, data dictionary, ETL loading, and data preview.
 
 - 🔗 [Try the Live App](https://bank-customer-chun-sql.streamlit.app/)  
