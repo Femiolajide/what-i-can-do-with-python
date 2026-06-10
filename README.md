@@ -64,6 +64,18 @@ All are built with intention.
 Each episode represents a small idea turned into a working solution.
 
 
+### 🔹 Episode 19 – SQL-First Bank Customer Churn Analysis with PostgreSQL and Streamlit
+Started an interactive SQL analysis project that connects Streamlit to a remote PostgreSQL database. Each section displays the SQL query behind the action, allows users to run it, and returns the result with a short insight. This episode covers the data setup stage, including data source, data dictionary, ETL loading, and data preview.
+
+- 🔗 [Try the Live App](https://bank-customer-chun-sql.streamlit.app/)  
+- 📝 [Read LinkedIn Post](https://www.linkedin.com/posts/olajide-atanda-084756239_python-sql-postgresql-ugcPost-7470240663855599616-Ffy6/?utm_source=share&utm_medium=member_android&rcm=ACoAADtgoeQB7Oys-vyU028wK5ForxCRgjuNZmw)
+
+### 🔹 Episode 18 – Auto-Detect Data Types for SQL Script Generation
+Improved the SQL data loading script generator by adding automatic data type detection. Users can upload CSV or Excel files, choose PostgreSQL or MySQL, and generate SQL table creation scripts with inferred data types such as integers, decimals, dates, datetimes, time values, booleans, and text.
+
+- 🔗 [Try the Live App](https://lnkd.in/dCETe9bR)  
+- 📝 [Read LinkedIn Post](https://www.linkedin.com/posts/olajide-atanda-084756239_episode-18-of-what-i-can-do-with-python-activity-7465142044236070912-zBl7?utm_source=share&utm_medium=member_android&rcm=ACoAADtgoeQB7Oys-vyU028wK5ForxCRgjuNZmw)
+
 
 ### 🔹 Episode 17 – Multi-File CSV/Excel to SQL Script Generator
 Upgraded the CSV/Excel to SQL tool by adding support for multiple file uploads, allowing users to generate table creation and data insertion scripts for several files at once.
