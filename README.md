@@ -64,6 +64,46 @@ All are built with intention.
 Each episode represents a small idea turned into a working solution.
 
 
+### 🔹 Episode 24 – Regression Assumption Checks in Excel (Python Add-In)
+Expanded the Python-powered Excel add-in with automated regression assumption checks. It now generates a diagnostics table covering multicollinearity, residual normality, influential observations, homoscedasticity, and residual independence using VIF, Jarque–Bera, Cook’s Distance, Breusch–Pagan, and Durbin–Watson tests.
+
+- 🎥 [Watch Demo](https://drive.google.com/file/d/180S8LIxJKuUCWgyfcF827vm4UjMtpR5a/view?usp=drivesdk)
+- 📝 [Read LinkedIn Post](https://www.linkedin.com/posts/olajide-atanda-084756239_python-excel-automation-activity-7482914818992017408-juP_?utm_source=share&utm_medium=member_android&rcm=ACoAADtgoeQB7Oys-vyU028wK5ForxCRgjuNZmw)
+
+---
+
+### 🔹 Episode 23 – Multiple Linear Regression with Multiple Output Styles
+Improved the Python-powered Excel regression add-in by introducing two selectable reporting styles. Users can now generate the same regression analysis in different table formats to meet different departmental, supervisor, or journal requirements.
+
+- 🎥 [Watch Demo](https://drive.google.com/file/d/1oveQ2dyltOL5hG0o_3jfdmvz8s1sV5Di/view?usp=drivesdk)
+- 📝 [Read LinkedIn Post](https://www.linkedin.com/posts/olajide-atanda-084756239_python-excel-automation-activity-7480363105617674240-943p?utm_source=share&utm_medium=member_android&rcm=ACoAADtgoeQB7Oys-vyU028wK5ForxCRgjuNZmw)
+
+---
+
+### 🔹 Episode 22 – Multiple Linear Regression Analysis in Excel (Python Add-In)
+Added Multiple Linear Regression Analysis to the Python-powered Excel add-in. With a few clicks, it generates a model summary, ANOVA table, standardized and unstandardized coefficients. 
+
+- 🎥 [Watch Demo](https://drive.google.com/file/d/1ruHQ4OnloPdxU8tapXJ9qXZxgfuzqIEl/view?usp=drivesdk)
+- 📝 [Read LinkedIn Post](https://www.linkedin.com/posts/olajide-atanda-084756239_python-excel-automation-activity-7477833370178166785-mVG8?utm_source=share&utm_medium=member_android&rcm=ACoAADtgoeQB7Oys-vyU028wK5ForxCRgjuNZmw)
+
+---
+
+### 🔹 Episode 21 – Correlation Analysis in Excel (Python Add-In)
+Built a Python-powered Excel analysis pipeline that generates correlation coefficients, significance values, correlation matrices, and single correlation tables. The solution combines VBA, xlwings, pandas, SciPy, and NumPy in a reusable Excel add-in.
+
+- 🎥 [Watch Demo](https://drive.google.com/file/d/1MRQGAYjN_ZhRJbBz3CTRX3_XYSV5Resp/view?usp=drivesdk)
+- 📝 [Read LinkedIn Post](https://www.linkedin.com/posts/olajide-atanda-084756239_python-excel-dataanalysis-activity-7475315088183308289-Ckld?utm_source=share&utm_medium=member_android&rcm=ACoAADtgoeQB7Oys-vyU028wK5ForxCRgjuNZmw)
+
+---
+
+### 🔹 Episode 20 – Bank Customer Churn Data Quality Checks with PostgreSQL and Streamlit
+Expanded the Bank Customer Churn Analysis project with an interactive data quality section. Users can run SQL checks for duplicate records, missing values, categorical values, numerical ranges, and data types against a remote PostgreSQL database and view a short interpretation of each result.
+
+- 🔗 [Try the Live App](https://bank-customer-chun-sql.streamlit.app)
+- 📝 [Read LinkedIn Post](https://www.linkedin.com/posts/olajide-atanda-084756239_python-postgresql-sql-activity-7472739577028534273-wCPf?utm_source=share&utm_medium=member_android&rcm=ACoAADtgoeQB7Oys-vyU028wK5ForxCRgjuNZmw)
+
+---
+
 ### 🔹 Episode 19 – Bank Customer Churn Analysis with PostgreSQL and Streamlit
 Started an interactive SQL analysis project that connects Streamlit to a remote PostgreSQL database. Each section displays the SQL query behind the action, allows users to run it, and returns the result with a short insight. This episode covers the data setup stage, including data source, data dictionary, ETL loading, and data preview.
 
@@ -76,6 +116,7 @@ Improved the SQL data loading script generator by adding automatic data type det
 - 🔗 [Try the Live App](https://lnkd.in/dCETe9bR)  
 - 📝 [Read LinkedIn Post](https://www.linkedin.com/posts/olajide-atanda-084756239_episode-18-of-what-i-can-do-with-python-activity-7465142044236070912-zBl7?utm_source=share&utm_medium=member_android&rcm=ACoAADtgoeQB7Oys-vyU028wK5ForxCRgjuNZmw)
 
+---
 
 ### 🔹 Episode 17 – Multi-File CSV/Excel to SQL Script Generator
 Upgraded the CSV/Excel to SQL tool by adding support for multiple file uploads, allowing users to generate table creation and data insertion scripts for several files at once.
@@ -83,11 +124,15 @@ Upgraded the CSV/Excel to SQL tool by adding support for multiple file uploads, 
 - 🔗 [Try the Live App](https://sql-data-loading-script-3.streamlit.app) 
 - 📝 [Read LinkedIn Post](https://www.linkedin.com/posts/olajide-atanda-084756239_episode-17-of-what-i-can-do-with-python-ugcPost-7462621978143895552--B6Z/?utm_source=share&utm_medium=member_android&rcm=ACoAADtgoeQB7Oys-vyU028wK5ForxCRgjuNZmw) 
 
+---
+
 ### 🔹 Episode 16 – CSV/Excel to MySQL and PostgreSQL Script Generator
 Extended the earlier PostgreSQL script generator by adding MySQL support, so users can choose their preferred SQL format before downloading the generated script.
 
 - 🔗 [Try the Live App](https://sql-data-loading-script-2.streamlit.app) 
 - 📝 [Read LinkedIn Post](https://www.linkedin.com/posts/olajide-atanda-084756239_episode-16-of-what-i-can-do-with-python-activity-7460053783570735104-FK7A?utm_source=share&utm_medium=member_android&rcm=ACoAADtgoeQB7Oys-vyU028wK5ForxCRgjuNZmw) 
+
+---
 
 ### 🔹 Episode 15 – CSV/Excel to PostgreSQL Script Generator
 Built a simple Streamlit tool that converts CSV or Excel files into ready-to-run PostgreSQL scripts for creating tables and inserting data.
@@ -95,7 +140,7 @@ Built a simple Streamlit tool that converts CSV or Excel files into ready-to-run
 - 🔗 [Try the Live App](https://sql-data-loading-script.streamlit.app) 
 - 📝 [Read LinkedIn Post](https://www.linkedin.com/posts/olajide-atanda-084756239_episode-15-of-what-i-can-do-with-python-activity-7457537718533918720-vmGl?utm_source=share&utm_medium=member_android&rcm=ACoAADtgoeQB7Oys-vyU028wK5ForxCRgjuNZmw)
 
-
+---
 
 
 ### 🔹 Episode 14 – Fraction Expression Calculator (Upgraded) 
