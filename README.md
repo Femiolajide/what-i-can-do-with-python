@@ -67,7 +67,7 @@ Each episode represents a small idea turned into a working solution.
 ### 🔹 Episode 24 – Regression Assumption Checks in Excel (Python Add-In)
 Expanded the Python-powered Excel add-in with automated regression assumption checks. It now generates a diagnostics table covering multicollinearity, residual normality, influential observations, homoscedasticity, and residual independence using VIF, Jarque–Bera, Cook’s Distance, Breusch–Pagan, and Durbin–Watson tests.
 
-- 🎥 [Watch Demo](https://drive.google.com/file/d/180S8LIxJKuUCWgyfcF827vm4UjMtpR5a/view?usp=drivesdk)
+- 🎥 [Watch Demo](https://drive.google.com/file/d/180S8LIxJKuUCWgyfcF827vm4UjMtpR5a/view?usp=sharing)
 - 📝 [Read LinkedIn Post](https://www.linkedin.com/posts/olajide-atanda-084756239_python-excel-automation-activity-7482914818992017408-juP_?utm_source=share&utm_medium=member_android&rcm=ACoAADtgoeQB7Oys-vyU028wK5ForxCRgjuNZmw)
 
 ---
@@ -75,7 +75,7 @@ Expanded the Python-powered Excel add-in with automated regression assumption ch
 ### 🔹 Episode 23 – Multiple Linear Regression with Multiple Output Styles
 Improved the Python-powered Excel regression add-in by introducing two selectable reporting styles. Users can now generate the same regression analysis in different table formats to meet different departmental, supervisor, or journal requirements.
 
-- 🎥 [Watch Demo](https://drive.google.com/file/d/1oveQ2dyltOL5hG0o_3jfdmvz8s1sV5Di/view?usp=drivesdk)
+- 🎥 [Watch Demo](https://drive.google.com/file/d/1oveQ2dyltOL5hG0o_3jfdmvz8s1sV5Di/view?usp=sharing)
 - 📝 [Read LinkedIn Post](https://www.linkedin.com/posts/olajide-atanda-084756239_python-excel-automation-activity-7480363105617674240-943p?utm_source=share&utm_medium=member_android&rcm=ACoAADtgoeQB7Oys-vyU028wK5ForxCRgjuNZmw)
 
 ---
@@ -83,7 +83,7 @@ Improved the Python-powered Excel regression add-in by introducing two selectabl
 ### 🔹 Episode 22 – Multiple Linear Regression Analysis in Excel (Python Add-In)
 Added Multiple Linear Regression Analysis to the Python-powered Excel add-in. With a few clicks, it generates a model summary, ANOVA table, standardized and unstandardized coefficients. 
 
-- 🎥 [Watch Demo](https://drive.google.com/file/d/1ruHQ4OnloPdxU8tapXJ9qXZxgfuzqIEl/view?usp=drivesdk)
+- 🎥 [Watch Demo](https://drive.google.com/file/d/1ruHQ4OnloPdxU8tapXJ9qXZxgfuzqIEl/view?usp=sharing)
 - 📝 [Read LinkedIn Post](https://www.linkedin.com/posts/olajide-atanda-084756239_python-excel-automation-activity-7477833370178166785-mVG8?utm_source=share&utm_medium=member_android&rcm=ACoAADtgoeQB7Oys-vyU028wK5ForxCRgjuNZmw)
 
 ---
@@ -91,7 +91,7 @@ Added Multiple Linear Regression Analysis to the Python-powered Excel add-in. Wi
 ### 🔹 Episode 21 – Correlation Analysis in Excel (Python Add-In)
 Built a Python-powered Excel analysis pipeline that generates correlation coefficients, significance values, correlation matrices, and single correlation tables. The solution combines VBA, xlwings, pandas, SciPy, and NumPy in a reusable Excel add-in.
 
-- 🎥 [Watch Demo](https://drive.google.com/file/d/1MRQGAYjN_ZhRJbBz3CTRX3_XYSV5Resp/view?usp=drivesdk)
+- 🎥 [Watch Demo](https://drive.google.com/file/d/1MRQGAYjN_ZhRJbBz3CTRX3_XYSV5Resp/view?usp=sharing)
 - 📝 [Read LinkedIn Post](https://www.linkedin.com/posts/olajide-atanda-084756239_python-excel-dataanalysis-activity-7475315088183308289-Ckld?utm_source=share&utm_medium=member_android&rcm=ACoAADtgoeQB7Oys-vyU028wK5ForxCRgjuNZmw)
 
 ---
